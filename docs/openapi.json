@@ -1,0 +1,19 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "openfin8-au",
+    "version": "0.1.0",
+    "description": "Sentin8 OpenFin8:AU - Australian open finance (the Consumer Data Right: banking-sector data holder, sharing arrangements, consent dashboard obligations). The CDR standards are published under the MIT Open Licence; resource paths carried with the notice preserved."
+  },
+  "paths": {
+    "/v1/health": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  }
+}
