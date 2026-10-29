@@ -1,10 +1,9 @@
 # openfin8-au - Detailed Design Document
 
-> Status: **PROPOSED** - the Australian open-finance adapter
-> (OBARCH-8). The **Consumer Data Right** (CDR) - the Australian
+> The **Consumer Data Right** (CDR) - the Australian
 > Government's sector-agnostic data-sharing regime (banking is the
 > first sector; energy, telco, and non-bank lending follow), CDR
-> standards v1.36.0 line. Depends on: `openfin8-core` (OBARCH-1).
+> standards v1.36.0 line. Depends on: `openfin8-core`.
 > Read `openfin8-uk/DESIGN.md` for the sibling design; this
 > document defines the AU deltas.
 
@@ -38,7 +37,7 @@ the current standards are data-plane only (NPP payment work is
 consultation-stage). The AU adapter is the first data-plane-only
 adapter.
 
-## 2. The CDR Wire (as designed, per the verified research)
+## 2. The CDR Wire
 
 | Family | Resources | Notes |
 |---|---|---|
@@ -95,14 +94,14 @@ family over bank8:Payments (the same one-executor model).
   the software-product cert/key references, the served sector list
   (banking first). Per-env overrides via `sys.services.config`.
 
-## 6. Spec Publication (OBARCH-2)
+## 6. Spec Publication
 
 **Vendored**: the CDR standards are published under the **MIT Open
 Licence** (Data61/DSB). This adapter MAY carry the CDR resource
 paths with the copyright notice preserved. The drift guard asserts
 the notice and the `/cds-au/v{maj}/{sector}/...` path shape.
 
-## 7. Invariants (as designed)
+## 7. Invariants
 
 - Every kernel invariant holds.
 - **AU additions**: the arrangement revocation is honored on the

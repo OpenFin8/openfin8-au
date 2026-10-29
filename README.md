@@ -16,9 +16,9 @@ obligations (the data-holder consent dashboard, mandated wording,
 notifications) are part of the deliverable. Data-plane only: CDR
 banking has no payment initiation in the current standards.
 
-In design (OBARCH-8): DESIGN.md covers the CDR wire, the
-arrangement model, the dashboard obligations, and the Register
-integration.
+[`DESIGN.md`](https://github.com/OpenFin8/openfin8-au/blob/main/DESIGN.md)
+covers the CDR wire, the arrangement model, the dashboard
+obligations, and the Register integration.
 
 - [Architecture (DDD)](https://github.com/OpenFin8/openfin8-au/blob/main/DESIGN.md)
 - [Business (BRD)](https://github.com/OpenFin8/openfin8-au/blob/main/BUSINESS.md)

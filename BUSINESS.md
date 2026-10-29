@@ -1,8 +1,7 @@
 # OpenFin8:AU - Business Requirements & Functionality
 
-> Status: **IN DESIGN** (OBARCH-8). This BRD records the business
-> scope the Australian adapter will deliver; section 9 lists the
-> implementation acceptance criteria (the service is a skeleton).
+> This BRD records the business scope the Australian adapter
+> delivers; section 9 lists the acceptance criteria.
 >
 > Audience: product owners, business analysts. For architecture read
 > `README.md`; for wire-level detail read `DESIGN.md`.
@@ -12,7 +11,7 @@
 OpenFin8:AU is **Australian open finance**: the **Consumer Data
 Right** (CDR) - the Australian Government's sector-agnostic
 data-sharing regime (banking first; energy, telco, and non-bank
-lending follow by legislation). It will deliver:
+lending follow by legislation). It delivers:
 
 - **The CDR data-holder surface** - the banking-sector endpoints an
   accredited data recipient consumes, per the CDR standards
@@ -87,7 +86,7 @@ boundary; the LoA is enforced at reauthorisation.
 Family `openfin8:au:*`: arrangement lifecycle, revocation, sector
 data events - consumed by recipient-side reconciliation.
 
-## 5. Business Rules & Invariants (as designed)
+## 5. Business Rules & Invariants
 
 - Every kernel invariant holds.
 - Arrangement revocation is honored on the next call AND surfaced to
@@ -121,9 +120,8 @@ environment).
 
 ## 9. Acceptance Criteria (the implementation's definition of done)
 
-- The skeleton builds + the publication guard passes (vendored with
-  the MIT notice) - **current state**.
-- The arrangement model over the kernel lands (permissions,
+- The publication guard passes (vendored with the MIT notice).
+- The arrangement model over the kernel (permissions,
   duration, 90-day reauthorisation, revocation endpoint).
 - The consumer dashboard pages (view/revoke + mandated wording) +
   the 90-day notification worker.
