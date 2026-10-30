@@ -1,12 +1,4 @@
 {
   "vertical": "openfin8",
-  "services": [
-    {
-      "service_type": "openfin8:au",
-      "telemetry_property": {
-        "slug": "openfin8-au",
-        "name": "OpenFin8:AU Telemetry"
-      }
-    }
-  ]
+  "services": []
 }
