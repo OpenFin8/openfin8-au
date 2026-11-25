@@ -1,4 +1,17 @@
 {
   "vertical": "openfin8",
-  "services": []
+  "services": [
+    {
+      "service_type": "openfin8:au",
+      "extra_env": {
+        "OPENFIN8_AU_SOFTWARE_PRODUCT_CERT_REF": "sentin8-secrets://openfin8-au/software-product-cert",
+        "OPENFIN8_AU_SOFTWARE_PRODUCT_KEY_REF": "sentin8-secrets://openfin8-au/software-product-key"
+      },
+      "telemetry_property": {
+        "slug": "openfin8-au",
+        "name": "OpenFin8:AU Telemetry"
+      },
+      "exposure": "internal"
+    }
+  ]
 }
